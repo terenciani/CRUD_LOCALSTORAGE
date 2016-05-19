@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.6/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <h1> Exemplo Local Storage </h1>
+        <form name = "formCadastro" id="formCadastro" method="post">
+
+            <div class="row form-group" >
+                <div class="col-md-1">
+                    <label>CPF:</label>
+                </div>					
+                <div class="col-md-2">
+                    <input type = "text"  class="form-control" name = "cpf" id = "txt_cpf" maxlength = "14" required="required"/>
+                </div>
+                <div class="col-md-1">
+                    <label>Nome:</label>
+                </div>
+                <div class="col-md-8">
+                    <input type = "text" class="form-control"  id = "txt_nome" maxlength = "60" required="required"/>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success" value="Enviar" id = "btn_salvar">
+                </div>
+            </div>
+        </form>
+        
+        <h1> Lista de Dados </h1>
+        <table id="tbLista" class="table table-bordered">
+        </table>
+        
+    </body>
+</html>
